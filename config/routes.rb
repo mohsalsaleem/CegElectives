@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+ 
+
+
+  devise_for :admins
+  authenticate :admin do
+  	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  end
   devise_for :users
   resources :electives
   get 'search', to: 'search#search'  
