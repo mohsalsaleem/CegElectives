@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_id: MyString
+  name: MyString
+  description: MyText
+  teacher: MyString
+  students: MyString
+  unit_1: MyText
+  unit_2: MyText
+  unit_3: MyText
+  unit_4: MyText
+  unit_5: MyText
+
+two:
+  course_id: MyString
+  name: MyString
+  description: MyText
+  teacher: MyString
+  students: MyString
+  unit_1: MyText
+  unit_2: MyText
+  unit_3: MyText
+  unit_4: MyText
+  unit_5: MyText

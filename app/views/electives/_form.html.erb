@@ -1,0 +1,57 @@
+<%= form_for(@elective) do |f| %>
+  <% if @elective.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@elective.errors.count, "error") %> prohibited this elective from being saved:</h2>
+
+      <ul>
+      <% @elective.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :course_id %><br>
+    <%= f.text_field :course_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :teacher %><br>
+    <%= f.text_field :teacher %>
+  </div>
+  <div class="field">
+    <%= f.label :students %><br>
+    <%= f.text_field :students %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_1 %><br>
+    <%= f.text_area :unit_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_2 %><br>
+    <%= f.text_area :unit_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_3 %><br>
+    <%= f.text_area :unit_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_4 %><br>
+    <%= f.text_area :unit_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_5 %><br>
+    <%= f.text_area :unit_5 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

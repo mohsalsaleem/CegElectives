@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @elective.course_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @elective.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @elective.description %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @elective.teacher %>
+</p>
+
+<p>
+  <strong>Students:</strong>
+  <%= @elective.students %>
+</p>
+
+<p>
+  <strong>Unit 1:</strong>
+  <%= @elective.unit_1 %>
+</p>
+
+<p>
+  <strong>Unit 2:</strong>
+  <%= @elective.unit_2 %>
+</p>
+
+<p>
+  <strong>Unit 3:</strong>
+  <%= @elective.unit_3 %>
+</p>
+
+<p>
+  <strong>Unit 4:</strong>
+  <%= @elective.unit_4 %>
+</p>
+
+<p>
+  <strong>Unit 5:</strong>
+  <%= @elective.unit_5 %>
+</p>
+
+<%= link_to 'Edit', edit_elective_path(@elective) %> |
+<%= link_to 'Back', electives_path %>
